@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VehiculeInfoActivity">
+
+    <TextView
+        android:id="@+id/completerVihecule"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Insérez les informations concernant votre véhicule."
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completerVihecule">
+
+        <EditText
+            android:id="@+id/immClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Immatricule"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/ListeMarque"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:hint="Marque" />
+
+        <Spinner
+            android:id="@+id/ListeCouleur"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:hint="Couleur" />
+
+        <EditText
+            android:id="@+id/typevihecule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Type"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/envoyerButton"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="ENVOYER"
+            android:textStyle="bold" />
+
+        ;
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
