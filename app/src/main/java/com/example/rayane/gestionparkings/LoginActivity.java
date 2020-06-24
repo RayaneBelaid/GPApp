@@ -36,16 +36,14 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile(
-                    /*"^" + "(?=.*[0-9])"+
-                    "(?=.*[A-Z])"+*/
-                   // "([@$%&#])"+
+                    
                     "[0-9a-zA-Z]" + "[-@$%&#]"+ "{4,10}"+ "$");
 
   //NAME PATTERN
 
     private static final Pattern NAME_PATTERN =
             Pattern.compile(
-                    /*"^" + */
+                    
                             "[0-9a-zA-Z]"+
                             "{4,15}"+
                             "$");
@@ -93,14 +91,6 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
                     startActivity(intent);
                 }
-
-                /*if(isValidePassword(PASSWORD)){
-                    Toast.makeText(LoginActivity.this, "Validé", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(LoginActivity.this, " Non valide", Toast.LENGTH_SHORT).show();
-
-                }*/
-
             }
         });
 
